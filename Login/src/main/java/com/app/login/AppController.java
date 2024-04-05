@@ -33,9 +33,8 @@ public class AppController {
 
     private Stage stage;
     private Scene scene;
-    private Parent root;
     @FXML
-    public void onLoginButtonClick(ActionEvent event) throws IOException {
+    public void onLoginButtonClick(@SuppressWarnings("exports") ActionEvent event) throws IOException {
         if(usertextField.getText().equals("usuario") && UserPasswordField.getText().equals("1234")) {
             LoginText.setText("iniciaste sesion como usuario");
 
